@@ -1,0 +1,196 @@
+/* CSS VARIABLES  */
+:root {
+    --bg-dark: #151515;
+    --bg-orange-600: #F88340;
+    --bg-orange-500: #FF934E;
+    --bg-yellow-500: #FFC107;
+    --bg-gray-600: #7A7A7A;
+    --bg-blue-700: #084298;
+    --bg-slate-300: #212121;
+    --bg-gray-100: #424242;
+    --bg-white: #fff;
+    --cormorant: "Cormorant", serif;
+    --quicksand: "Quicksand", sans-serif;
+}
+
+/* CSS VARIABLES  */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Quicksand:wght@300..700&display=swap');
+
+
+/* RESET CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+/* RESET CSS */
+
+
+
+
+/*  HEADER-BEGIN */
+header {
+    background-color: var(--bg-dark);
+    height: 96px;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    .header-content {
+        width: 100%;
+        height: 100%;
+
+
+        .nav-side {
+            nav {
+                ul {
+                    li {
+                        padding: 19px 8px;
+                        cursor: pointer;
+
+                        a {
+                            color: var(--bg-white);
+                            font-family: var(--quicksand);
+                            font-size: 16px;
+                            font-weight: 700;
+                            transition: all .3s ease-in-out;
+
+
+                        }
+
+                        i {
+                            color: var(--bg-white);
+                            transition: all .3s ease-in-out;
+
+
+                        }
+
+                        &:hover i {
+                            color: var(--bg-orange-500);
+                        }
+
+                        &:hover a {
+                            color: var(--bg-orange-500);
+                        }
+                    }
+                }
+
+                .fa-bars {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .mobile-menu {
+        width: 100%;
+        height: 0;
+        background-color: var(--bg-dark);
+        padding: 8px 0;
+        transition: all .3s;
+        opacity: 0;
+        visibility: hidden;
+        overflow: hidden;
+
+
+        nav {
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                li {
+                    padding: 4px 8px;
+                    cursor: pointer;
+
+                    a {
+                        color: var(--bg-white);
+                        font-family: var(--quicksand);
+                        font-size: 16px;
+                        font-weight: 700;
+                        transition: all .3s ease-in-out;
+
+
+                    }
+
+                    i {
+                        color: var(--bg-white);
+                        transition: all .3s ease-in-out;
+
+
+                    }
+
+                    &:hover i {
+                        color: var(--bg-orange-500);
+                    }
+
+                    &:hover a {
+                        color: var(--bg-orange-500);
+                    }
+                }
+            }
+
+
+        }
+
+
+    }
+
+    .show-mobile-menu {
+        opacity: 1;
+        visibility: visible;
+        height: 249px;
+    }
+}
+
+
+
+/*  HEADER-END */
+
+
+
+
+
+/*   MAIN-BEGIN */
+
+
+
+/*  MAIN-END */
+
+/* Responsive Size For Mobile */
+@media only screen and (max-width:991px) {
+    header {
+        width: 100vw;
+
+        .header-content {
+            padding: 0 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+
+            .nav-side nav {
+                .fa-bars {
+                    display: block;
+                }
+
+                ul {
+                    display: none;
+                }
+            }
+        }
+
+
+    }
+
+
+}
