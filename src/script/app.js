@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", runAllFunction);
 
-// c Hamburg Menu Function
+// Hamburg Menu Function
 let HamburgMenuObject = {
   mobileMenu: document.querySelector(".mobile-menu"),
   menuButton: document.querySelector(".fa-bars"),
@@ -14,7 +14,7 @@ let HamburgMenuObject = {
   },
 };
 
-//c Output of all methods
+// Output of all methods
 function runAllFunction(e) {
   if (e.target) {
     HamburgMenuObject.showHamburgMenu();

@@ -90,7 +90,7 @@ header {
             }
         }
     }
-
+/* Mobile Hamburg Menu  */
     .mobile-menu {
         width: 100%;
         height: 0;
@@ -152,12 +152,7 @@ header {
     }
 }
 
-
-
 /*  HEADER-END */
-
-
-
 
 
 /*   MAIN-BEGIN */
@@ -184,7 +179,7 @@ header {
                 }
 
                 ul {
-                    display: none;
+                     display: none;
                 }
             }
         }
